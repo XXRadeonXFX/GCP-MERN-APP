@@ -1,0 +1,31 @@
+services:
+  hello-service:
+    image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:hs-radeon
+    build:
+      context: ./backend/helloService
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3001"
+    env_file:
+      - ./backend/helloService/.env
+
+  profile-service:
+    image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:ps-radeon
+    build:
+      context: ./backend/profileService
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3002"
+    env_file:
+      - ./backend/profileService/.env
+
+  frontend:
+    image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:fe-radeon
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
+    environment:
+      - REACT_APP_HELLO_API_URL=http://localhost:3001
+      - REACT_APP_PROFILE_API_URL=http://localhost:3002
