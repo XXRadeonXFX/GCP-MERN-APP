@@ -77,6 +77,12 @@ This application consists of three main services:
    - Hello Service: http://localhost:3001
    - Profile Service: http://localhost:3002
 
+![hello-service](Screenshots/hello-service.png)
+
+![profile-service](Screenshots/profile-service.png)
+
+![frontend](Screenshots/frontend.png)
+
 ## 🐳 Docker Deployment
 
 ### Using Docker Compose (Recommended)
