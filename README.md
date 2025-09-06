@@ -29,7 +29,7 @@ Note: This will run the frontend in the development server. To run in production
 
 
 
-
+```
 radeonxfx@DESKTOP-JIH47ND:~/GCP-MERN-APP$ gcloud auth configure-docker us-central1-docker.pkg.dev
 WARNING: Your config file at [/home/radeonxfx/.docker/config.json] contains these credential helper entries:
 
@@ -56,3 +56,4 @@ docker tag frontend us-central1-docker.pkg.dev/heroviredacademics/my-repo/fronte
 radeonxfx@DESKTOP-JIH47ND:~/GCP-MERN-APP$ docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/hello-service:latest
 docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/profile-service:latest
 docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/frontend:latest
+```
