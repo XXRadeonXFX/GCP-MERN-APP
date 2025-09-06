@@ -1,4 +1,4 @@
-# MERN Microservices Application
+# MERN Microservices Application on GCP
 
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://docker.com)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-Supported-326CE5?logo=kubernetes)](https://kubernetes.io)
