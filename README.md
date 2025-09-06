@@ -6,6 +6,9 @@
 
 A sample MERN (MongoDB, Express.js, React, Node.js) application demonstrating microservices architecture with containerization and Kubernetes orchestration.
 
+![GKE](Screenshots/GKE.png)
+
+
 ## 🏗️ Architecture
 
 This application consists of three main services:
