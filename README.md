@@ -222,6 +222,8 @@ gcloud container clusters get-credentials mern-cluster --zone=us-central1-a
 # Deploy application
 kubectl apply -f kubernetes/
 ```
+![GKE-final-deployment](Screenshots/GKE-final-deployment.png)
+
 
 ## 📁 Project Structure
 
