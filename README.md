@@ -62,4 +62,10 @@ docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/frontend:lates
 ```
  kubectl create configmap app-config --from-literal=MONGO_U
 RL='YOURMONGOURI/DATABASE'
+
+
+
+kubectl port-forward svc/hello-service 4001:3001
+kubectl port-forward svc/profile-service 4002:3002
+kubectl port-forward svc/frontend 4000:3000
 ```
