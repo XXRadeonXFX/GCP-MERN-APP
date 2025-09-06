@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:fe-radeon
+        image: us-central1-docker.pkg.dev/heroviredacademics/my-repo/frontend:latest
         ports:
         - containerPort: 3000
         env:
