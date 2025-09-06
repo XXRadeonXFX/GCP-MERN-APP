@@ -57,3 +57,9 @@ radeonxfx@DESKTOP-JIH47ND:~/GCP-MERN-APP$ docker push us-central1-docker.pkg.dev
 docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/profile-service:latest
 docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/frontend:latest
 ```
+
+#KUBERNETES
+```
+ kubectl create configmap app-config --from-literal=MONGO_U
+RL='YOURMONGOURI/DATABASE'
+```
