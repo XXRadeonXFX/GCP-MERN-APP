@@ -167,6 +167,9 @@ kubectl port-forward svc/profile-service 4002:3002
 kubectl port-forward svc/frontend 4000:3000
 ```
 
+![port-fwd](Screenshots/port-fwd.png)
+
+
 **Access URLs:**
 - Frontend: http://localhost:4000
 - Hello Service: http://localhost:4001
@@ -202,6 +205,9 @@ docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/hello-service:
 docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/profile-service:latest
 docker push us-central1-docker.pkg.dev/heroviredacademics/my-repo/frontend:latest
 ```
+
+![artifact-registry](Screenshots/artifact-registry.png)
+
 
 ### Step 3: Deploy to GKE
 ```bash
