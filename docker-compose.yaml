@@ -1,31 +1,33 @@
+version: "3.9"
+
 services:
   hello-service:
-    image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:hs-radeon
+    image: us-central1-docker.pkg.dev/heroviredacademics/my-repo/hello-service:latest
     build:
       context: ./backend/helloService
       dockerfile: Dockerfile
     ports:
-      - "3000:3001"
+      - "3001:3001"
     env_file:
       - ./backend/helloService/.env
 
   profile-service:
-    image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:ps-radeon
+    image: us-central1-docker.pkg.dev/heroviredacademics/my-repo/profile-service:latest
     build:
       context: ./backend/profileService
       dockerfile: Dockerfile
     ports:
-      - "3001:3002"
+      - "3002:3002"
     env_file:
       - ./backend/profileService/.env
 
   frontend:
-    image: 975050024946.dkr.ecr.ap-south-1.amazonaws.com/prince-reg:fe-radeon
+    image: us-central1-docker.pkg.dev/heroviredacademics/my-repo/frontend:latest
     build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "3002:3000"
+      - "3000:3000"
     environment:
-      - REACT_APP_HELLO_API_URL=http://localhost:3001
-      - REACT_APP_PROFILE_API_URL=http://localhost:3002
+      REACT_APP_HELLO_API_URL: http://localhost:3001
+      REACT_APP_PROFILE_API_URL: http://localhost:3002
