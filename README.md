@@ -26,8 +26,11 @@ npm start
 
 Note: This will run the frontend in the development server. To run in production, build the application by running the command `npm run build`
 
-
-
+```
+docker run -p 3001:3001 --env-file backend/helloService/.env hello-service
+docker run -p 3002:3002 --env-file backend/profileService/.env profile-service
+docker run -p 3000:3000 --env-file frontend/.env frontend
+```
 
 ```
 radeonxfx@DESKTOP-JIH47ND:~/GCP-MERN-APP$ gcloud auth configure-docker us-central1-docker.pkg.dev
